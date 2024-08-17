@@ -26,6 +26,7 @@
     <section id="about" class="about-me">
         <div class="container">
             <h2>About Me</h2>
+            <img src="./assets/profilePhoto.jpg" alt="Profile Picture" class="profile-pic">
             <p>Hello! I'm Ganesh, a Mechanical Engineering student with a passion for coding and design.</p>
         </div>
     </section>
@@ -34,13 +35,13 @@
         <div class="container">
             <h2>Skills</h2>
             <div class="skills-grid">
-                <div class="skill">HTML</div>
-                <div class="skill">CSS</div>
-                <div class="skill">JavaScript</div>
-                <div class="skill">React</div>
-                <div class="skill">Python</div>
-                <div class="skill">AI/ML</div>
-                <div class="skill">Figma</div>
+                <div class="skill-item">HTML</div>
+                <div class="skill-item">CSS</div>
+                <div class="skill-item">JavaScript</div>
+                <div class="skill-item">React</div>
+                <div class="skill-item">Python</div>
+                <div class="skill-item">AI/ML</div>
+                <div class="skill-item">Figma</div>
             </div>
         </div>
     </section>
@@ -49,10 +50,22 @@
         <div class="container">
             <h2>Portfolio</h2>
             <div class="portfolio-grid">
-                <div class="project"><a href="https://blogwebsitedb.onrender.com">Blog Website</a></div>
-                <div class="project"><a href="https://iitm-schedule.glitch.me/todos">ToDo</a></div>
-                <div class="project"><a href="https://52.0.160.0">ISB Chatbot</a></div>
-                <div class="project"><a href="http://vidyarang.online">VidyaRANG</a></div>
+                <div class="portfolio-item">
+                    <img src="./assets/blog_thumbnail.png" alt="Blog Website">
+                    <a href="https://blogwebsitedb.onrender.com">Blog Website</a>
+                </div>
+                <div class="portfolio-item">
+                    <img src="./assets/todo_thumbnail.png" alt="ToDo">
+                    <a href="https://iitm-schedule.glitch.me/todos">ToDo</a>
+                </div>
+                <div class="portfolio-item">
+                    <img src="./assets/isb_thumbnail.jpeg" alt="ISB Chatbot">
+                    <a href="https://52.0.160.0">ISB Chatbot</a>
+                </div>
+                <div class="portfolio-item">
+                    <img src="./assets/vidyarang_thumbnail.jpeg" alt="VidyaRANG">
+                    <a href="http://vidyarang.online">VidyaRANG</a>
+                </div>
             </div>
         </div>
     </section>
@@ -60,10 +73,10 @@
     <section id="contact" class="contact">
         <div class="container">
             <h2>Contact</h2>
-            <form action="#">
-                <input type="text" placeholder="Your Name" required>
-                <input type="email" placeholder="Your Email" required>
-                <textarea placeholder="Your Message" required></textarea>
+            <form id="contact-form" action="https://formspree.io/f/YOUR_FORM_ID" method="POST">
+                <input type="text" name="name" placeholder="Your Name" required>
+                <input type="email" name="email" placeholder="Your Email" required>
+                <textarea name="message" placeholder="Your Message" required></textarea>
                 <button type="submit">Send Message</button>
             </form>
         </div>
@@ -75,5 +88,5 @@
         </div>
     </footer>
 </body>
-    
+
 </html>
